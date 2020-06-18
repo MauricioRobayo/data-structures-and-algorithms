@@ -1,17 +1,17 @@
 function bfs(graph) {
-  const queue = [0]
-  const result = [0]
+  const queue = [0];
+  const result = [0];
   while (queue.length > 0) {
-    const current = queue.shift()
-    graph[current].forEach(neighbor => {
+    const current = queue.shift();
+    graph[current].forEach((neighbor) => {
       if (result.includes(neighbor)) {
-        return
+        return;
       }
-      queue.push(neighbor)
-      result.push(neighbor)
-    })
+      queue.push(neighbor);
+      result.push(neighbor);
+    });
   }
-  return result
+  return result;
 }
 const g = {
   0: [2],
@@ -20,7 +20,7 @@ const g = {
   3: [2],
   4: [1, 5],
   5: [4, 2],
-}
+};
 // eslint-disable-next-line no-console
-console.log(bfs(g))
+console.log(bfs(g));
 // [0, 2, 5, 3, 4, 1]

@@ -13,9 +13,7 @@
   "author": "Mauricio Robayo <hi@mauriciorobayo.com> (www.mauriciorobayo.com)",
   "license": "MIT",
   "prettier": {
-    "singleQuote": true,
-    "trailingComma": "all",
-    "semi": false
+    "singleQuote": true
   },
   "devDependencies": {
     "eslint": "^7.2.0",
