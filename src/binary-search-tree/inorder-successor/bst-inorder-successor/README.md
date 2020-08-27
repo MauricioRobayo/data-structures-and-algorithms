@@ -10,14 +10,8 @@ In this diagram, the inorder successor of 3 is 4 and the inorder successor of 7 
 
 Example:
 
-In the diagram above, for inputNode whose key = 11
+In the diagram above, for inputNode whose key = 3
 
 Your function would return:
 
-The Inorder Successor node whose key = 12
-
-Constraints:
-
-[time limit] 5000ms
-[input] Node inputNode
-[output] Node
+The Inorder Successor node whose key = 4
