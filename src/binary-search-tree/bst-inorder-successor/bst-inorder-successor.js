@@ -24,10 +24,6 @@ function BinarySearchTree() {
 }
 
 BinarySearchTree.prototype.findInOrderSuccessor = function(inputNode) {
-  //         20 
-  //    9          25
-  // 5     12
-  //     11   14
 }
 
 // Creates a new node by a key and inserts it to the BST
@@ -103,6 +99,8 @@ bst.insert(5);
 bst.insert(12);
 bst.insert(11);
 bst.insert(14);
+
+min(20)
 
 // Get a reference to the node whose key is 9
 var test = bst.getNodeByKey(9);
