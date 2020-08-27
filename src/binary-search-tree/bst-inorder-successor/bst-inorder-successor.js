@@ -23,7 +23,32 @@ function BinarySearchTree() {
   this.root = null;
 }
 
+function min(root) {
+
+  let min = root
+
+  while (min.left) {
+    min = min.left
+  }
+
+  return min
+
+}
+
 BinarySearchTree.prototype.findInOrderSuccessor = function(inputNode) {
+  if (inputNode.right) {
+    return min(inputNode.right)
+  }
+
+  let parent = inputNode.parent
+  let child = inputNode
+
+  while (parent !== null && parent.right === child) {
+    child = parent
+    parent = parent.parent
+  }
+
+  return parent
 }
 
 // Creates a new node by a key and inserts it to the BST
@@ -92,25 +117,19 @@ BinarySearchTree.prototype.getNodeByKey = function(key) {
 
 // Create a Binary Search Tree
 var bst = new BinarySearchTree();
-bst.insert(20);
-bst.insert(9);
-bst.insert(25);
-bst.insert(5);
-bst.insert(12);
-bst.insert(11);
+bst.insert(8);
+bst.insert(3);
+bst.insert(10);
+bst.insert(1);
+bst.insert(6);
+bst.insert(4);
+bst.insert(7);
+bst.insert(10);
 bst.insert(14);
+bst.insert(13);
 
-min(20)
 
-// Get a reference to the node whose key is 9
-var test = bst.getNodeByKey(9);
-
-// Find the in order successor of test
-var succ = test ? bst.findInOrderSuccessor(test) : null;
-
-// Print the key of the successor node
-if(succ) {
-  console.log("Inorder successor of " + test.key + " is " + succ.key);
-} else {
-  console.log("Inorder successor does not exist");
-}
+const assert = require('assert')
+assert(bst.findInOrderSuccessor(bst.getNodeByKey(3)).key === 4)
+assert(bst.findInOrderSuccessor(bst.getNodeByKey(7)).key === 8)
+assert(bst.findInOrderSuccessor(bst.getNodeByKey(14)) === null)
