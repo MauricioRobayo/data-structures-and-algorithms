@@ -23,5 +23,3 @@ Output: Root of the following tree
               / \ /
              6  6 6
 ```
-
-## Example test case
