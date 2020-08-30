@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="310" height="180" viewBox="0, 0, 310, 180">
+  <g id="Background">
+    <rect x="0" y="0" width="310" height="180" fill="#FFFFFF"/>
+  </g>
+  <g id="g2987">
+    <path d="M170.987,25 C170.987,36.046 161.591,45 150.001,45 C138.41,45 129.014,36.046 129.014,25 C129.014,13.954 138.41,5 150.001,5 C161.591,5 170.987,13.954 170.987,25 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 150.814, 25.406)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">2</tspan>
+    </text>
+  </g>
+  <g id="g2992">
+    <path d="M92.288,80 C92.288,91.046 82.893,100 71.302,100 C59.712,100 50.316,91.046 50.316,80 C50.316,68.954 59.712,60 71.302,60 C82.893,60 92.288,68.954 92.288,80 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 72.116, 80.406)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">7</tspan>
+    </text>
+  </g>
+  <g id="g3000">
+    <path d="M249.684,80 C249.684,91.046 240.288,100 228.698,100 C217.107,100 207.712,91.046 207.712,80 C207.712,68.954 217.107,60 228.698,60 C240.288,60 249.684,68.954 249.684,80 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 229.511, 80.406)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">5</tspan>
+    </text>
+  </g>
+  <g id="g3008">
+    <path d="M44.615,155.182 C44.615,166.227 35.22,175.182 23.629,175.182 C12.039,175.182 2.643,166.227 2.643,155.182 C2.643,144.136 12.039,135.182 23.629,135.182 C35.22,135.182 44.615,144.136 44.615,155.182 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 23.629, 155.477)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">2</tspan>
+    </text>
+  </g>
+  <g id="g3016">
+    <path d="M144.753,155 C144.753,166.046 135.357,175 123.767,175 C112.176,175 102.781,166.046 102.781,155 C102.781,143.954 112.176,135 123.767,135 C135.357,135 144.753,143.954 144.753,155 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 124.58, 155.406)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">6</tspan>
+    </text>
+  </g>
+  <g id="g3024">
+    <path d="M302.149,155 C302.149,166.046 292.754,175 281.163,175 C269.573,175 260.177,166.046 260.177,155 C260.177,143.954 269.573,135 281.163,135 C292.754,135 302.149,143.954 302.149,155 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 281.977, 155.406)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">9</tspan>
+    </text>
+  </g>
+  <g id="g3032" display="none">
+    <path d="M102.782,225 C102.782,236.046 93.386,245 81.795,245 C70.205,245 60.809,236.046 60.809,225 C60.809,213.954 70.205,205 81.795,205 C93.386,205 102.782,213.954 102.782,225 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 82.609, 225.406)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">5</tspan>
+    </text>
+  </g>
+  <g id="g3040" display="none">
+    <path d="M186.726,225 C186.726,236.046 177.33,245 165.74,245 C154.15,245 144.754,236.046 144.754,225 C144.754,213.954 154.15,205 165.74,205 C177.33,205 186.726,213.954 186.726,225 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 165.939, 225.248)">
+      <tspan x="-15.676" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">11</tspan>
+    </text>
+  </g>
+  <g id="g3048" display="none">
+    <path d="M249.684,225 C249.684,236.046 240.288,245 228.698,245 C217.107,245 207.712,236.046 207.712,225 C207.712,213.954 217.107,205 228.698,205 C240.288,205 249.684,213.954 249.684,225 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    <text transform="matrix(1.049, 0, 0, 1, 229.511, 225.406)">
+      <tspan x="-8.088" y="8.5" font-family=".LucidaGrandeUI" font-size="24" fill="#000000">4</tspan>
+    </text>
+  </g>
+  <g id="g3096">
+    <g>
+      <path d="M88.169,68.547 L101.855,62.579 L98.077,57.75 L88.169,68.547 z" fill="#000000"/>
+      <path d="M88.169,68.547 L101.855,62.579 L98.077,57.75 L88.169,68.547 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M96.609,62.565 L133.13,36.614" fill="#000000"/>
+      <path d="M96.609,62.565 L133.13,36.614" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="g3106">
+    <g>
+      <path d="M210.799,68.547 L197.113,62.579 L200.891,57.75 L210.799,68.547 z" fill="#000000"/>
+      <path d="M210.799,68.547 L197.113,62.579 L200.891,57.75 L210.799,68.547 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M202.36,62.565 L165.838,36.614" fill="#000000"/>
+      <path d="M202.36,62.565 L165.838,36.614" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="g3112">
+    <g>
+      <path d="M31.303,138.051 L42.009,127.97 L36.722,124.67 L31.303,138.051 z" fill="#000000"/>
+      <path d="M31.303,138.051 L42.009,127.97 L36.722,124.67 L31.303,138.051 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M37.076,129.673 L59.754,96.675" fill="#000000"/>
+      <path d="M37.076,129.673 L59.754,96.675" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="g3118">
+    <g>
+      <path d="M111.702,138.128 L100.996,128.047 L106.284,124.747 L111.702,138.128 z" fill="#000000"/>
+      <path d="M111.702,138.128 L100.996,128.047 L106.284,124.747 L111.702,138.128 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M105.929,129.75 L83.251,96.752" fill="#000000"/>
+      <path d="M105.929,129.75 L83.251,96.752" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="g3124">
+    <g>
+      <path d="M269.624,137.878 L258.918,127.797 L264.205,124.497 L269.624,137.878 z" fill="#000000"/>
+      <path d="M269.624,137.878 L258.918,127.797 L264.205,124.497 L269.624,137.878 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M263.851,129.5 L241.173,96.502" fill="#000000"/>
+      <path d="M263.851,129.5 L241.173,96.502" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="g3130" display="none">
+    <g>
+      <path d="M241.288,208.628 L251.994,198.547 L246.706,195.247 L241.288,208.628 z" fill="#000000"/>
+      <path d="M241.288,208.628 L251.994,198.547 L246.706,195.247 L241.288,208.628 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M247.061,200.25 L267.67,170.261" fill="#000000"/>
+      <path d="M247.061,200.25 L267.67,170.261" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="g3142" display="none">
+    <g>
+      <path d="M155.919,207.426 L146.052,196.595 L151.588,193.689 L155.919,207.426 z" fill="#000000"/>
+      <path d="M155.919,207.426 L146.052,196.595 L151.588,193.689 L155.919,207.426 z" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+    <g>
+      <path d="M150.834,198.651 L135.262,171.706" fill="#000000"/>
+      <path d="M150.834,198.651 L135.262,171.706" fill-opacity="0" stroke="#000000" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="g3148">
+    <text transform="matrix(1, 0, 0, 1, 115.311, 14.088)">
+      <tspan x="-3.414" y="4" font-family="Chalkboard" font-size="12" fill="#000000">0</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 37.38, 63.949)">
+      <tspan x="-2.228" y="4" font-family="Chalkboard" font-size="12" fill="#000000">1</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 189.803, 69.24)">
+      <tspan x="-3.414" y="4" font-family="Chalkboard" font-size="12" fill="#000000">2</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 10.969, 127.182)">
+      <tspan x="-3.414" y="4" font-family="Chalkboard" font-size="12" fill="#000000">3</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 88.098, 137.035)">
+      <tspan x="-3.414" y="4" font-family="Chalkboard" font-size="12" fill="#000000">4</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 248.666, 140.768)">
+      <tspan x="-3.414" y="4" font-family="Chalkboard" font-size="12" fill="#000000">6</tspan>
+    </text>
+    <text transform="matrix(1, 0, 0, 1, 186.483, 132.977)">
+      <tspan x="-3.414" y="4" font-family="Chalkboard" font-size="12" fill="#000000">5</tspan>
+    </text>
+    <path d="M186.961,-33.043 L187,-33" fill-opacity="0" stroke="#515151" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <defs/>
+</svg>
