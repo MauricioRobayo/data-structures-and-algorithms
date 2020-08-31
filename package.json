@@ -10,7 +10,7 @@
     "format": "prettier --write \"src/**/*.{js,css,md}\""
   },
   "keywords": [],
-  "author": "Mauricio Robayo <hi@mauriciorobayo.com> (www.mauriciorobayo.com)",
+  "author": "Mauricio Robayo <rfmajo@gmail.com> (www.mauriciorobayo.com)",
   "license": "MIT",
   "prettier": {
     "singleQuote": true
