@@ -14,10 +14,6 @@ const sortedArrayToBST = function (nums) {
 
   const node = new TreeNode(middleEl);
 
-  console.log(arrMiddle);
-  console.log('left:', nums.slice(0, arrMiddle));
-  console.log('right:', nums.slice(arrMiddle + 1));
-
   node.left = sortedArrayToBST(nums.slice(0, arrMiddle));
   node.right = sortedArrayToBST(nums.slice(arrMiddle + 1));
 
