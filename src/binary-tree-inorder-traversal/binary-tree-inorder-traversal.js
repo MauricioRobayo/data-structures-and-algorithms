@@ -6,7 +6,7 @@ function TreeNode(val = 0, left = null, right) {
 }
 
 // eslint-disable-next-line
-function bst(array) {}
+function buildBT(array) {}
 
 function inOrderTraversal(root) {
   const res = [];
@@ -26,5 +26,5 @@ function inOrderTraversal(root) {
 }
 
 const array = [1, null, 2, 3];
-const tree = bst(array);
+const tree = buildBT(array);
 console.log(inOrderTraversal(tree));
