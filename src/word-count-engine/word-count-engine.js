@@ -1,5 +1,7 @@
 function wordCountEngine(document) {
   const wordFrequency = new Map();
+  const order = [];
+  const result = [];
 
   document
     .trim()
@@ -14,15 +16,29 @@ function wordCountEngine(document) {
       }
     });
 
-  // console.log(wordFrequency)
+  wordFrequency.forEach((val, key) => {
+    if (order[val] === undefined) {
+      order[val] = [key];
+    } else {
+      order[val].push(key);
+    }
+  });
 
-  return [...wordFrequency.entries()]
-    .map(([key, val]) => [key, String(val)])
-    .sort(([k1, v1], [k2, v2]) => v2 - v1); // eslint-disable-line no-unused-vars
+  for (let i = order.length - 1; i >= 0; i -= 1) {
+    const words = order[i];
+    if (order[i] === undefined) {
+      continue; // eslint-disable-line no-continue
+    }
+    words.forEach((word) => {
+      result.push([word, String(i)]);
+    });
+  }
+
+  return result;
 }
 
 const document =
   'Every book is a quotation; and every house is a quotation out of all forests, and mines, and stone quarries; and every man is a quotation from all his ancestors. ';
 const wordCount = wordCountEngine(document);
 
-console.log({ wordCount });
+console.log(wordCount);
