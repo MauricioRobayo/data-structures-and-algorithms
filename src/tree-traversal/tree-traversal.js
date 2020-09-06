@@ -22,13 +22,30 @@ function arrayToTree(array) {
 }
 
 function postOrder(node) {
-  if (node === null) {
-    return '';
+  const stack = [];
+  const visited = [];
+  let result = '';
+  let currentNode = node;
+
+  while (stack.length > 0 || currentNode) {
+    while (currentNode) {
+      stack.push(currentNode);
+      currentNode = currentNode.left;
+    }
+
+    const root = stack[stack.length - 1];
+    const right = root.right;
+    if (right && !visited.includes(right)) {
+      currentNode = right;
+    } else {
+      currentNode = stack.pop();
+      result += ` ${currentNode.data}`;
+      visited.push(currentNode);
+      currentNode = null;
+    }
   }
 
-  const left = postOrder(node.left);
-  const right = postOrder(node.right);
-  return `${left}${right} ${node.data}`;
+  return result.slice(1);
 }
 
 const tree = arrayToTree([10, 1, 2, 3, 4, 5, 6]);
