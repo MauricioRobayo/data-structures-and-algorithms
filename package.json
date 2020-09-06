@@ -16,8 +16,7 @@
     "singleQuote": true
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "husky": "^4.2.1",
