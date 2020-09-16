@@ -3,10 +3,10 @@ function findGrantsCap(grantsArray, newBudget) {
   let cap = newBudget / grantsArray.length;
   let runningBudget = newBudget;
 
-  const sortedGrantsArray = grantsArray.sort((a, b) => a - b);
+  grantsArray.sort((a, b) => a - b);
 
-  while (sortedGrantsArray[i] < cap) {
-    runningBudget -= sortedGrantsArray[i];
+  while (grantsArray[i] < cap) {
+    runningBudget -= grantsArray[i];
     cap = runningBudget / (grantsArray.length - i - 1);
     i += 1;
   }
@@ -14,4 +14,4 @@ function findGrantsCap(grantsArray, newBudget) {
   return cap;
 }
 
-console.log(findGrantsCap([2, 47, 47, 47, 47], 190));
+console.log(findGrantsCap([2, 100, 50, 120, 1000], 190));
