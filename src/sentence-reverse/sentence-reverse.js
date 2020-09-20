@@ -1,37 +1,28 @@
-function reverseArray(arr, start, end) {
-  const middle = (end + start) / 2;
-  for (let i = start; i <= middle; i++) {
-    const tail = end - (i - start);
-    [arr[i], arr[tail]] = [arr[tail], arr[i]];
+function reverseArray(arr, start = 0, end = arr.length - 1) {
+  const middle = (start + end) / 2;
+
+  for (let i = start; i < middle; i++) {
+    const endOffset = end - (i - start);
+
+    [arr[i], arr[endOffset]] = [arr[endOffset], arr[i]];
   }
 }
 
 function reverseWords(arr) {
-  reverseArray(arr, 0, arr.length - 1);
+  reverseArray(arr);
 
   let wordStart = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (i === arr.length - 1) {
-      reverseArray(arr, wordStart, i);
-      wordStart = i + 1;
-    }
+    if (arr[i].trim() === '' || i === arr.length - 1) {
+      const wordEnd = i === arr.length - 1 ? i : i - 1;
 
-    if (arr[i].trim() === '') {
-      reverseArray(arr, wordStart, i - 1);
+      reverseArray(arr, wordStart, wordEnd);
       wordStart = i + 1;
     }
   }
+
   return arr;
 }
-
-// function reverseWords(arr) {
-//   return [...arr
-//     .join('')
-//     .split(' ')
-//     .filter((el) => el !== '')
-//     .reverse()
-//     .join(' ')]
-// }
 
 const array = [
   'p',
@@ -57,5 +48,13 @@ const array = [
   'c',
   'e',
 ];
+
+/*
+1. reverse the array
+olleh dlrow
+
+2. reverse each word in the reversed array
+hello  world
+*/
 
 console.log(reverseWords(array));
