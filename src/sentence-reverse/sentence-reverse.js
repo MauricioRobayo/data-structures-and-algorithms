@@ -1,10 +1,8 @@
 function reverseArray(arr, start = 0, end = arr.length - 1) {
-  const middle = (start + end) / 2;
-
-  for (let i = start; i < middle; i++) {
-    const endOffset = end - (i - start);
-
-    [arr[i], arr[endOffset]] = [arr[endOffset], arr[i]];
+  while (start < end) {
+    [arr[start], arr[end]] = [arr[end], arr[start]];
+    start++;
+    end--;
   }
 }
 
@@ -48,13 +46,5 @@ const array = [
   'c',
   'e',
 ];
-
-/*
-1. reverse the array
-olleh dlrow
-
-2. reverse each word in the reversed array
-hello  world
-*/
 
 console.log(reverseWords(array));
