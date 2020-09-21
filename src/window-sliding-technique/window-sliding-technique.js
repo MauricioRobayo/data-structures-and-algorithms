@@ -1,32 +1,22 @@
 function maxSum(arr, k) {
-  // O(n * k)
-  let max = 0;
-  for (let i = 0; i < arr.length - (k - 1); i++) {
-    let sum = arr[i];
-    for (let j = 1; j < k; j++) {
-      sum += arr[i + j];
-    }
-    if (sum > max) {
-      max = sum;
-    }
+  let tail = 0;
+  let head = tail + (k - 1);
+  let sum = arr[0];
+
+  for (let i = 1; i < k; i++) {
+    sum += arr[i];
+  }
+
+  let max = sum;
+
+  while (head < arr.length - 1) {
+    sum -= arr[tail++];
+    sum += arr[++head];
+    max = Math.max(max, sum);
   }
 
   return max;
 }
 
-const arr = [100, 200, 300, 400];
-console.log(maxSum(arr, 2));
-
-/*
-Input  : arr[] = {100, 200, 300, 400}
-
-max = 0
-i = 0
-
-sum = arr[0] 100
-j = 1
-sum += 300
-
-
-
-*/
+const arr = [1, 4, 2];
+console.log(maxSum(arr, 3));
