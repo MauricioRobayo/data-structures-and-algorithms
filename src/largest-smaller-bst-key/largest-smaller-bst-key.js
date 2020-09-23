@@ -11,63 +11,47 @@ function BinarySearchTree() {
   this.root = null;
 }
 
-function inOrderTraversal(num, node, result = []) {
-  if (node === null) {
-    return -1;
-  }
-
-  inOrderTraversal(num, node.left, result);
-  if (num < node.key) {
-    return result;
-  }
-  result.push(node.key);
-  inOrderTraversal(num, node.right, result);
-
-  return result;
-}
-
 BinarySearchTree.prototype.findLargestSmallerKey = function (num) {
-  const sortedArray = inOrderTraversal(num, this.root);
+  let currentNode = this.root;
+  let largestSmaller = null;
 
-  if (num < sortedArray[0]) {
-    return -1;
+  while (currentNode) {
+    if (num < currentNode.key) {
+      currentNode = currentNode.left;
+    } else {
+      largestSmaller = currentNode;
+      currentNode = currentNode.right;
+    }
   }
 
-  return sortedArray[sortedArray.length - 1];
+  return largestSmaller ? largestSmaller.key : -1;
 };
 
 // Creates a new node by a key and inserts it to the BST
 BinarySearchTree.prototype.insert = function (key) {
-  var root = this.root;
+  const newNode = new TreeNode(key);
 
-  // 1. If the tree is empty, create the root
-  if (!root) {
-    this.root = new TreeNode(key);
+  if (this.root === null) {
+    this.root = newNode;
     return;
   }
 
-  // 2) Otherwise, create a node with the key
-  //    and traverse down the tree to find where to
-  //    to insert the new node
-  var currentNode = root;
-  var newNode = new TreeNode(key);
+  let currentNode = this.root;
 
-  while (currentNode !== null) {
+  while (currentNode) {
     if (key < currentNode.key) {
-      if (!currentNode.left) {
-        currentNode.left = newNode;
-        newNode.parent = currentNode;
-        break;
-      } else {
+      if (currentNode.left) {
         currentNode = currentNode.left;
+      } else {
+        currentNode.left = newNode;
+        break;
       }
     } else {
-      if (!currentNode.right) {
-        currentNode.right = newNode;
-        newNode.parent = currentNode;
-        break;
-      } else {
+      if (currentNode.right) {
         currentNode = currentNode.right;
+      } else {
+        currentNode.right = newNode;
+        break;
       }
     }
   }
@@ -87,6 +71,6 @@ bst.insert(12);
 bst.insert(11);
 bst.insert(14);
 
-var result = bst.findLargestSmallerKey(17);
+var result = bst.findLargestSmallerKey(27);
 
 console.log('Largest smaller number is ' + result);
