@@ -1,5 +1,3 @@
-const assert = require('assert');
-
 function TreeNode(val, left = null, right = null) {
   this.val = val;
   this.left = left;
@@ -10,28 +8,56 @@ function BST() {
   this.root = null;
 }
 
-BST.prototype.insert = function (node, root = this.root) {
-  if (!root) {
-    root = node; // eslint-disable-line
+BST.prototype.insert = function (node) {
+  if (!this.root) {
+    this.root = node;
+    return;
   }
-  console.log(this.root);
+
+  let currentNode = this.root;
+
+  while (currentNode) {
+    if (node.val < currentNode.val) {
+      if (currentNode.left === null) {
+        currentNode.left = node;
+        break;
+      } else {
+        currentNode = currentNode.left;
+      }
+    } else {
+      if (currentNode.right === null) {
+        currentNode.right = node;
+        break;
+      } else {
+        currentNode = currentNode.right;
+      }
+    }
+  }
 };
 
-BST.prototype.preOrder = function () {};
+BST.prototype.preOrder = function () {
+  function helper(node) {
+    if (node === null) {
+      return '';
+    }
 
-function bst(array) {
-  const binarySearchTree = new BST();
+    return `${node.val} ${helper(node.left)}${helper(node.right)}`;
+  }
 
-  array.forEach((e) => {
-    const node = new TreeNode(e);
-    binarySearchTree.insert(node);
-  });
-
-  return binarySearchTree.preOrder().join('');
-}
+  return helper(this.root).trim();
+};
 
 const array = [8, 3, 10, 1, 6, 14, 4, 7, 13];
-assert(bst(array) === '8 3 1 6 5 7 10 14 13');
+const binarySearchTree = new BST();
+
+array.forEach((e) => {
+  const node = new TreeNode(e);
+  binarySearchTree.insert(node);
+});
+
+console.log(binarySearchTree.preOrder());
+
+// '8 3 1 6 4 7 10 14 13'
 
 /*
 
