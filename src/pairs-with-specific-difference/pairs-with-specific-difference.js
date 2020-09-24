@@ -1,14 +1,22 @@
 function findPairsWithGivenDifference(arr, k) {
-  const set = new Set(arr);
+  if (k === 0) {
+    return [];
+  }
 
+  const xSet = new Set(arr);
   const result = [];
-  for (let y = 0; y < arr.length; y++) {
-    const x = k + arr[y];
-    if (set.has(x)) {
-      result.push([x, arr[y]]);
+
+  for (let i = 0; i < arr.length; i++) {
+    const y = arr[i];
+    const x = y + k;
+    if (xSet.has(x)) {
+      result.push([x, y]);
     }
   }
+
   return result;
 }
 
-console.log(findPairsWithGivenDifference([0, -1, -2, 2, 1], 0));
+const arr = [0, -1, -2, 2, 1];
+const k = 1;
+console.log(findPairsWithGivenDifference(arr, k));
