@@ -8,13 +8,13 @@ function arrayOfArrayProducts(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
     result.push(result[i] * arr[i]);
   }
-
+  
   let product = 1;
-  for (let i = arr.length - 1; i > 0; i--) {
+  for(let i = arr.length - 1; i >= 0; i--) {
+    result[i] *= product;
     product *= arr[i];
-    result[i - 1] = result[i - 1] * product;
   }
-
+  
   return result;
 }
 
